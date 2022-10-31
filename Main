@@ -1,60 +1,27 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("RaumHub", "BloodTheme")
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+	Name = "RaumHub",
+	LoadingTitle = "RaumHub",
+	LoadingSubtitle = "by Megumin#6456 and Raum#1200",
+	ConfigurationSaving = {
+		Enabled = false,
+		FileName = "Raum Hub"
+	},
+	KeySystem = false,
+	KeySettings = {
+		Title = "Sirius Hub",
+		Subtitle = "Key System",
+		Note = "Join the discord (discord.gg/sirius)",
+		Key = "ABCDEF"
+	}
+})
 
-local Tab = Window:NewTab("Home")
-local Section = Tab:NewSection("Credits")
+local Tab = Window:CreateTab("Home")
+local Section = Tab:CreateSection("Scripts")
 
-Section:NewButton("Raum#1200", "", function()
-    setclipboard("Raum#1200")
-end)
- 
-Section:NewButton("Megumin#6456", "", function()
-    setclipboard("Megumin#6456")
-end)
- 
-Section:NewButton("Discord Server", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/h8QTNzAP",true))()
-end)
-
-local Section = Tab:NewSection("General Scripts")
-
-Section:NewButton("Infinite Yield", "", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
-Section:NewButton("BTools", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/vhHufvhG",true))()
-end)
-
-Section:NewButton("Infinity Jump", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/cf2nDxMa",true))()
-end)
-
-Section:NewButton("Fly E", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/RkUtdYb0",true))()
-end)
-
-Section:NewButton("Dark Dex V3", "", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
-end)
-
-local Section = Tab:NewSection("Graphic Scripts")
-
-Section:NewButton("Graphic Up", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/8GjrGdha",true))()
-end)
-
-Section:NewButton("FPS Boost", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/ywFjby1i",true))()
-end)
-
-Section:NewButton("RTX Script", "", function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
-end)
-
-local Tab = Window:NewTab("1 Page")
-local Section = Tab:NewSection("1 Page")
-
-Section:NewButton("Shindo", "", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/Raum-Hub/main/Shindo",true))()
-end)
+local Button = Tab:CreateButton({
+	Name = "Shindo",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/Raum-Hub/main/Shindo",true))()
+	end,
+})
