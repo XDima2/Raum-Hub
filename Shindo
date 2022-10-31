@@ -43,7 +43,7 @@ Section:NewButton("Genkai Changer (old)", "", function()
 end)
 
 Section:NewButton("RaumHub (Spins)", "", function()
-    loadstring(game:HttpGet("https://github.com/XDima2/Raum-Hub/blob/main/Shindo%20(Spins)",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/Raum-Hub/main/Spins",true))()
 end)
 
 Section:NewButton("Don Hub", "", function()
