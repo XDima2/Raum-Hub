@@ -1,0 +1,192 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("RaumHub", "BloodTheme")
+
+local Tab = Window:NewTab("Scripts")
+local Section = Tab:NewSection("Farm")
+
+Section:NewButton("Snxw", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/XDima2/main/Snxw", true))()
+end)
+
+Section:NewButton("V.G Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub"))()
+end)
+
+Section:NewButton("Premier X Lite", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
+end)
+
+Section:NewButton("Wumpus", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uuiUB7ce",true))()
+end)
+
+Section:NewButton("Project Vellerius", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/Revamps/main/SpyHub.lua"))()
+end)
+
+Section:NewButton("Kesh Hub", "", function()
+    loadstring(game:HttpGet("https://bend-over.space/.lua"))()
+end)
+
+Section:NewButton("Ski Hub", "", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Yousuck780/shindo-life/main/life"), true))()
+end)
+
+local Section = Tab:NewSection("Infinity Spins/Genkai Changer")
+
+Section:NewButton("Genkai Changer by xzqec", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xzqecc/Script/main/xzqec_changer"))()
+end)
+
+Section:NewButton("Genkai Changer (old)", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/0C42hGZd",true))()
+end)
+
+Section:NewButton("RaumHub (Spins)", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/tpd0hhy8",true))()
+end)
+
+Section:NewButton("Don Hub", "", function()
+    repeat pcall(function() source = game:HttpGet('https://gist.github.com/AzureArts/99f5b5cfd49def461216e4d4689757ce/raw',true) end) if source == nil then wait(0.5) warn('HTTP Error, retrying') end until source ~= nil loadstring(source)()
+end)
+
+Section:NewButton("Infinity Spins (Reset dont work)", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/dontsteal/ok/main/onme"))()
+end)
+
+Section:NewButton("Save Spins", "", function()
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "\128")
+end)
+
+Section:NewButton("Unsave Spins", "", function()
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+end)
+
+local Section = Tab:NewSection("Mobile Scripts")
+
+Section:NewButton("Premier X Lite", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SxnwDev/Premier/main/Free-Premier.lua", true))()
+end)
+
+Section:NewButton("Wumpus", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uuiUB7ce",true))()
+end)
+
+Section:NewButton("RaumHub (Spins)", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/tpd0hhy8",true))()
+end)
+
+Section:NewButton("Genkai Changer by xzqec", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xzqecc/Script/main/xzqec_changer"))()
+end)
+
+Section:NewButton("Genkai Changer (old)", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/0C42hGZd",true))()
+end)
+
+Section:NewButton("Save Spins", "", function()
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "\128")
+end)
+
+Section:NewButton("Unsave Spins", "", function()
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+end)
+
+local Tab = Window:NewTab("Bloodline Changer")
+local Section = Tab:NewSection("Bloodline Changer")
+
+Section:NewTextBox("Bloodline 1", "", function(Kg1)
+	game.Players.LocalPlayer.statz.main.kg1.Value = Kg1
+end)
+
+Section:NewTextBox("Bloodline 2", "", function(Kg2)
+	game.Players.LocalPlayer.statz.main.kg2.Value = Kg2
+end)
+
+Section:NewTextBox("Bloodline 3", "", function(Kg3)
+	game.Players.LocalPlayer.statz.main.kg3.Value = Kg3
+end)
+
+Section:NewTextBox("Bloodline 4", "", function(Kg4)
+	game.Players.LocalPlayer.statz.main.kg4.Value = Kg4
+end)
+
+Section:NewTextBox("Element 1", "", function(El1)
+	game.Players.LocalPlayer.statz.main.element1.Value = El1
+end)
+
+Section:NewTextBox("Element 2", "", function(El2)
+	game.Players.LocalPlayer.statz.main.element2.Value = El2
+end)
+
+Section:NewTextBox("Element 3", "", function(El3)
+	game.Players.LocalPlayer.statz.main.element3.Value = El3
+end)
+
+Section:NewTextBox("Element 4", "", function(El4)
+	game.Players.LocalPlayer.statz.main.element4.Value = El4
+end)
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Misc")
+
+Section:NewButton("No Cooldown", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HDTerebi/Shindo-Life/main/No%20CD%20Method"))
+end)
+
+Section:NewButton("Tutorial (Copy Link)", "", function()
+    setclipboard("https://pastebin.com/raw/iZEk0WFi")
+end)
+
+Section:NewButton("Infinite MD", "", function()
+    local mode = game.Players.LocalPlayer.Character.combat.mode
+    local copy = mode:Clone()
+    copy.Parent = mode.Parent
+    mode:Destroy()
+    local chakra = string.split(game.Players.LocalPlayer.PlayerGui.Main.ingamearena.Bar.cha.Text,"CHI: ")[2]
+    c = chakra:gsub("CH%: ","")
+    local cha
+    local function chakracheck()
+		chakra = string.split(game.Players.LocalPlayer.PlayerGui.Main.ingamearena.Bar.cha.Text,"CHI: ")[2]
+		c = chakra:gsub("CH%: ","")
+		cha = c
+	end
+	halfchi = chakra/1.5
+	print("CHI will recharge at "..halfchi)
+	spawn(function() 
+		while wait() do
+			if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed == 0 then
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+			end
+			chakracheck()
+		end
+	end)
+end)
+
+Section:NewButton("Infinite Jump", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/cf2nDxMa",true))()
+end)
+
+Section:NewButton("Infinite Chakra", "", function()
+    _G.InfChakra = true
+ 
+    loadstring(game:HttpGet('https://pastebin.com/raw/P0BqvPg7'))()
+end)
+
+Section:NewKeybind("Change Keybind", "", Enum.KeyCode.P, function()
+	Library:ToggleUI()
+end)
+
+local Section = Tab:NewSection("Credits")
+
+Section:NewButton("Raum#1200", "", function()
+    setclipboard("Raum#1200")
+end)
+
+Section:NewButton("Megumin#6456", "", function()
+    setclipboard("Megumin#6456")
+end)
+
+Section:NewButton("Discord Server", "", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/h8QTNzAP",true))()
+end)
