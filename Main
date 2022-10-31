@@ -56,5 +56,5 @@ local Tab = Window:NewTab("1 Page")
 local Section = Tab:NewSection("1 Page")
 
 Section:NewButton("Shindo", "", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/tXW0c8mW",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/Raum-Hub/main/Shindo",true))()
 end)
