@@ -1,0 +1,696 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("RaumHub", "BloodTheme")
+
+--function
+local kgs = {}
+for i,v in pairs(game:GetService("ReplicatedStorage").alljutsu:GetChildren()) do
+    if v:FindFirstChild("KG") then
+        table.insert(kgs, v.Name)
+    end
+end
+
+--Infinite Spins
+local Tab = Window:NewTab("Infinite Spins")
+local Section = Tab:NewSection("Start/Stop")
+
+Section:NewButton("Start", "Select Bloodline first, then press start", function()
+    _G.Enabled = true
+    snipe = a1
+    snipe1 = a2
+    snipe2 = a3
+    snipe3 = a4
+    snipe4 = a5
+    snipe5 = a6
+    snipe6 = a7
+    snipe7 = a8
+    snipe8 = a9
+    snipe9 = a10
+    snipe10 = c1
+    snipe11 = c2
+    snipe12 = c3
+    snipe13 = c4
+    spinKG1 = false
+    spinKG2 = false
+    spinKG3 = false
+    spinKG4 = false
+    spinEL1 = false
+    spinEL2 = false
+    spinEL3 = false
+    spinEL4 = false
+    -----------------------------------------------------------------------------------------------
+ 
+    --unsave data
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "\128")
+ 
+    --tp kg stuff
+    local tpservice = game:GetService("TeleportService")
+    local plr = game.Players.LocalPlayer
+ 
+    --spin stuff
+    while _G.Enabled == true do
+    if spinKG1 == true then
+        local A_1 = "spin"
+        local A_2 = "kg1"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    if spinKG2 == true then
+        local A_1 = "spin"
+        local A_2 = "kg2"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    if spinKG3 == true then
+        local A_1 = "spin"
+        local A_2 = "kg3"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    if spinKG4 == true then
+        local A_1 = "spin"
+        local A_2 = "kg4"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    if spinEL1 == true then
+        local A_1 = "spin"
+        local A_2 = "element1"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    if spinEL2 == true then
+        local A_1 = "spin"
+        local A_2 = "element2"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    if spinEL3 == true then
+        local A_1 = "spin"
+        local A_2 = "element3"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    if spinEL4 == true then
+        local A_1 = "spin"
+        local A_2 = "element4"
+        game:GetService("Players").LocalPlayer.startevent:FireServer(A_1, A_2)
+    end
+    wait()
+    -------------------------------------------------------------------------------------------------checking KG option snipe
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    -------------------------------------------------------------------------------------------------checking KG option snipe1
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe1 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe1 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe1 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe1 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    -------------------------------------------------------------------------------------------------checking KG option snipe2
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe2 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe2 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe2 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe2 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe3
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe3 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe3 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe3 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe3 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe4
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe4 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe4 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe4 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe4 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe5
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe5 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe5 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe5 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe5 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe6
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe6 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe6 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe6 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe6 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe7
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe7 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe7 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe7 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe7 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe8
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe8 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe8 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe8 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe8 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe9
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.kg1.Value == snipe9 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg2.Value == snipe9 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg3.Value == snipe9 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.kg4.Value == snipe9 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe10
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.element1.Value == snipe10 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element2.Value == snipe10 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element3.Value == snipe10 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element4.Value == snipe10 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe10
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.element1.Value == snipe11 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element2.Value == snipe11 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element3.Value == snipe11 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element4.Value == snipe11 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe10
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.element1.Value == snipe12 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element2.Value == snipe12 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element3.Value == snipe12 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element4.Value == snipe12 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+ 
+    ------------------------------------------------------------------------------------------------checking KG option snipe10
+ 
+    if game:GetService("Players").LocalPlayer.statz.main.element1.Value == snipe13 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element2.Value == snipe13 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element3.Value == snipe13 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    if game:GetService("Players").LocalPlayer.statz.main.element4.Value == snipe13 then
+        wait(3)
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+        wait()
+        game.Players.LocalPlayer:Kick("leave you got it leave")
+    end
+    -------------------------------------------------------------------------------------------------checking spins
+ 
+    if game:GetService("Players").LocalPlayer.statz.spins.Value <= 1 then
+        do
+            game.Players.LocalPlayer:Kick("there are no spins, I make a reset")
+            tpservice:Teleport(game.PlaceId, plr)
+        end
+    end
+    end
+end)
+
+Section:NewButton("Stop", "Unsave Spins", function()
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+    game:GetService("Players").LocalPlayer.startevent:FireServer("band", "Eye")
+    wait()
+    game.Players.LocalPlayer:Kick("ok")
+end)
+
+local Section = Tab:NewSection("Bloodline")
+
+Section:NewDropdown("1", "", kgs, function(KG1)
+    a1 = KG1
+end)
+
+Section:NewDropdown("2", "", kgs, function(KG2)
+    a2 = KG2
+end)
+
+Section:NewDropdown("3", "", kgs, function(KG3)
+    a3 = KG3
+end)
+
+Section:NewDropdown("4", "", kgs, function(KG4)
+    a4 = KG4
+end)
+
+Section:NewDropdown("5", "", kgs, function(KG5)
+    a5 = KG5
+end)
+
+Section:NewDropdown("6", "", kgs, function(KG6)
+    a6 = KG6
+end)
+
+Section:NewDropdown("7", "", kgs, function(KG7)
+    a7 = KG7
+end)
+
+Section:NewDropdown("8", "", kgs, function(KG8)
+    a8 = KG8
+end)
+
+Section:NewDropdown("9", "", kgs, function(KG9)
+    a9 = KG9
+end)
+
+Section:NewDropdown("10", "", kgs, function(KG10)
+    a10 = KG10
+end)
+
+local Section = Tab:NewSection("Element")
+
+Section:NewDropdown("1", "", {"fire", "lightning", "wind", "water", "purplelightning", "combustion", "yin", "yang", "acid", "cement", "gale", "chaos", "order", "goldlightning", "infernocombustion", "gilga"}, function(EL1)
+    c1 = EL1
+end)
+
+Section:NewDropdown("2", "", {"fire", "lightning", "wind", "water", "purplelightning", "combustion", "yin", "yang", "acid", "cement", "gale", "chaos", "order", "goldlightning", "infernocombustion", "gilga"}, function(EL2)
+    c2 = EL2
+end)
+
+Section:NewDropdown("3", "", {"fire", "lightning", "wind", "water", "purplelightning", "combustion", "yin", "yang", "acid", "cement", "gale", "chaos", "order", "goldlightning", "infernocombustion", "gilga"}, function(EL3)
+    c3 = EL3
+end)
+
+Section:NewDropdown("4", "", {"fire", "lightning", "wind", "water", "purplelightning", "combustion", "yin", "yang", "acid", "cement", "gale", "chaos", "order", "goldlightning", "infernocombustion", "gilga"}, function(EL4)
+    c4 = EL4
+end)
+
+local Section = Tab:NewSection("Slots")
+
+Section:NewToggle("Bloodline 1", "", function(Value)
+    spinKG1 = Value
+end)
+
+Section:NewToggle("Bloodline 2", "", function(Value)
+    spinKG2 = Value
+end)
+
+Section:NewToggle("Bloodline 3", "", function(Value)
+    spinKG3 = Value
+end)
+
+Section:NewToggle("Bloodline 4", "", function(Value)
+    spinKG4 = Value
+end)
+
+Section:NewToggle("Element 1", "", function(Value)
+    spinEL1 = Value
+end)
+
+Section:NewToggle("Element 2", "", function(Value)
+    spinEL2 = Value
+end)
+
+Section:NewToggle("Element 3", "", function(Value)
+    spinEL3 = Value
+end)
+
+Section:NewToggle("Element 4", "", function(Value)
+    spinEL4 = Value
+end)
+
+local Section = Tab:NewSection("Anti-AFK")
+
+Section:NewButton("Anti-AFK", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KazeOnTop/Rice-Anti-Afk/main/Wind", true))()
+end)
