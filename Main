@@ -25,3 +25,10 @@ local Button = Tab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/Raum-Hub/main/Shindo",true))()
 	end,
 })
+
+local Button = Tab:CreateButton({
+	Name = "YBA",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/XDima2/Raum-Hub/main/YBA",true))()
+	end,
+})
